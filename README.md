@@ -24,6 +24,22 @@ Can be managed through [duo](https://github.com/duojs/duo),
 let sort = require( "aureooms-js-sort" ) ;
 ```
 
+## Subpackages
+
+This package has several children:
+
+  - [aureooms/js-bucketsort](https://github.com/aureooms/js-bucketsort): bucketsort code bricks for JavaScript
+  - [aureooms/js-countingsort](https://github.com/aureooms/js-countingsort): countingsort code bricks for JavaScript
+  - [aureooms/js-heapsort](https://github.com/aureooms/js-heapsort): heapsort code bricks for JavaScript
+  - [aureooms/js-in-situ-sort-spec](https://github.com/aureooms/js-in-situ-sort-spec): in place sorting code bricks for JavaScript
+  - [aureooms/js-mergesort](https://github.com/aureooms/js-mergesort): mergesort code bricks for JavaScript
+  - [aureooms/js-merging](https://github.com/aureooms/js-merging): merging code bricks for JavaScript
+  - [aureooms/js-partition](https://github.com/aureooms/js-partition): partition code bricks for JavaScript
+  - [aureooms/js-quicksort](https://github.com/aureooms/js-quicksort): quicksort code bricks for JavaScript
+  - [aureooms/js-radixsort](https://github.com/aureooms/js-radixsort): radixsort code bricks for JavaScript
+  - [aureooms/js-selection](https://github.com/aureooms/js-selection): selection code bricks for JavaScript
+
+
 ## Use
 
 ```js
