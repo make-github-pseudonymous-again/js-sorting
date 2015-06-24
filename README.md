@@ -43,31 +43,28 @@ This package has several children:
 ## Use
 
 ```js
+let array = require( "aureooms-js-array" ) ;
+let search = require( "aureooms-js-search" ) ;
 let compare = require( "aureooms-js-compare" ) ;
 
-/** quicksort using hoare partitioning */
-let quicksort = sort.__quicksort__( sort.hoare ) ;
+let fordjohnson = function ( compare , a , i , j ) {
+
+	sort._fordjohnson( search.binarysearch )( compare , array.swap , a , i , j ) ;
+
+} ;
 
 let a = [ 1 , 6 , 5 , 3 , 2 , 4 ] ;
 
-quicksort( compare.increasing , a , 0 , a.length ) ;
+fordjohnson( compare.increasing , a , 0 , a.length ) ;
 
 a ; // [ 1 , 2 , 3 , 4 , 5 , 6 ]
 
-quicksort( compare.decreasing , a , 0 , a.length ) ;
+fordjohnson( compare.decreasing , a , 0 , a.length ) ;
 
 a ; // [ 6 , 5 , 4 , 3 , 2 , 1 ]
 
 // but also
 
-/** binary heapsort */
-let heapsort = sort.__heapsort__( 2 ) ;
-/** ternary heapsort */
-let heapsort = sort.__heapsort__( 3 ) ;
-/** quicksort (lomuto) */
-let quicksort = sort.__quicksort__( sort.lomuto ) ;
-/** dualpivotquicksort (yaroslavskiy) */
-let quicksort = sort.__dualpivotquicksort__( sort.yaroslavskiy ) ;
 /** insertionsort */
 let insertionsort = sort.insertionsort ;
 /** selectionsort */
@@ -78,5 +75,4 @@ let bubblesort = sort.bubblesort ;
 
 ## Reference
 
-  - https://kluedo.ub.uni-kl.de/frontdoor/index/index/docId/3463
   - http://sorting.at
