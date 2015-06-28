@@ -53,14 +53,6 @@ function ( args ) {
 itertools.product( [
 
 [
-	[ "heapsort (unary)", sort.__heapsort__( 1 ) ],
-	[ "heapsort (binary)", sort.__heapsort__( 2 ) ],
-	[ "heapsort (ternary)", sort.__heapsort__( 3 ) ],
-	[ "heapsort (4-ary)", sort.__heapsort__( 4 ) ],
-	[ "heapsort (5-ary)", sort.__heapsort__( 5 ) ],
-	[ "quicksort (hoare)", sort.__quicksort__( sort.hoare ) ],
-	[ "quicksort (lomuto)", sort.__quicksort__( sort.lomuto ) ],
-	[ "dualpivotquicksort (yaroslavskiy)", sort.__dualpivotquicksort__( sort.yaroslavskiy ) ],
 	[ "insertionsort", sort.insertionsort ],
 	[ "selectionsort", sort.selectionsort ],
 	[ "bubblesort", sort.bubblesort ],
