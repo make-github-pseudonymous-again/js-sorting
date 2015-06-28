@@ -3,6 +3,10 @@
 
 Sorting code bricks for JavaScript.
 
+```js
+let fordjohnson = sort._fordjohnson( search.binarysearch ) ;
+```
+
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-sort.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sort/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-sort.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sort)
 [![Bower version](http://img.shields.io/bower/v/aureooms-js-sort.svg?style=flat)](http://bower.io/search/?q=aureooms-js-sort)
@@ -15,16 +19,87 @@ Sorting code bricks for JavaScript.
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-sort.svg?style=flat)](https://github.com/aureooms/js-sort/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-sort.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-sort)
 
-Can be managed through [duo](https://github.com/duojs/duo),
-[component](https://github.com/componentjs/component),
-[bower](https://github.com/bower/bower), or
-[npm](https://github.com/npm/npm).
 
+Can be managed through [jspm](https://github.com/jspm/jspm-cli),
+[duo](https://github.com/duojs/duo),
+[component](https://github.com/componentjs/component),
+[bower](https://github.com/bower/bower),
+[ender](https://github.com/ender-js/Ender),
+[jam](https://github.com/caolan/jam),
+[spm](https://github.com/spmjs/spm),
+and [npm](https://github.com/npm/npm).
+
+## Install
+
+### jspm
+```terminal
+jspm install github:aureooms/js-sort
+# or
+jspm install npm:aureooms-js-sort
+```
+### duo
+No install step needed for duo!
+
+### component
+```terminal
+component install aureooms/js-sort
+```
+
+### bower
+```terminal
+bower install aureooms-js-sort
+```
+
+### ender
+```terminal
+ender add aureooms-js-sort
+```
+
+### jam
+```terminal
+jam install aureooms-js-sort
+```
+
+### spm
+```terminal
+spm install aureooms-js-sort --save
+```
+
+### npm
+```terminal
+npm install aureooms-js-sort --save
+```
+
+## Require
+### jspm
+```js
+let sort = require( "github:aureooms/js-sort" ) ;
+// or
+import sort from 'aureooms-js-sort' ;
+```
+### duo
+```js
+let sort = require( "aureooms/js-sort" ) ;
+```
+
+### component, ender, spm, npm
 ```js
 let sort = require( "aureooms-js-sort" ) ;
 ```
 
-## Subpackages
+### bower
+The script tag exposes the global variable `sort`.
+```html
+<script src="bower_components/aureooms-js-sort/js/dist/sort.min.js"></script>
+```
+Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/).
+
+### jam
+```js
+require( [ "aureooms-js-sort" ] , function ( sort ) { ... } ) ;
+```
+
+## Children
 
 This package has several children:
 
