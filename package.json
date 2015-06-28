@@ -36,5 +36,8 @@
     "url": "https://github.com/aureooms/js-sort.git",
     "type": "git"
   },
-  "version": "5.0.4"
+  "version": "5.0.4",
+  "spm": {
+    "main": "js/dist/sort.js"
+  }
 }
