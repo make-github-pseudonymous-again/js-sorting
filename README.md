@@ -1,7 +1,8 @@
 [js-sort](http://aureooms.github.io/js-sort)
 ==
 
-Sorting code bricks for JavaScript.
+Sorting code bricks for JavaScript. Parent is
+[aureooms/js-algo](https://github.com/aureooms/js-algo).
 
 ```js
 let fordjohnson = sort._fordjohnson( search.binarysearch ) ;
