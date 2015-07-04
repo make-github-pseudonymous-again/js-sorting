@@ -114,6 +114,7 @@ This package has several children:
   - [aureooms/js-partition](https://github.com/aureooms/js-partition): partition code bricks for JavaScript
   - [aureooms/js-radixsort](https://github.com/aureooms/js-radixsort): radixsort code bricks for JavaScript
   - [aureooms/js-selection](https://github.com/aureooms/js-selection): selection code bricks for JavaScript
+  - [aureooms/js-odd-even-mergesort](https://github.com/aureooms/js-odd-even-mergesort): Batcher's odd-even mergesort code bricks for JavaScript
 
 
 ## Use
