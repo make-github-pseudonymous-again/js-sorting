@@ -1,39 +1,36 @@
-var util, array, random, compare, itertools, functools;
+import test from 'ava' ;
 
-util = require( "util" );
-array = require( "aureooms-js-array" );
-search = require( "aureooms-js-search" );
-random = require( "aureooms-js-random" );
-compare = require( "aureooms-js-compare" );
-itertools = require( "aureooms-js-itertools" );
-functools = require( "aureooms-js-functools" );
+import array from "aureooms-js-array" ;
+import search from "aureooms-js-search" ;
+import random from "aureooms-js-random" ;
+import compare from "aureooms-js-compare" ;
+import * as itertools from "aureooms-js-itertools" ;
+import functools from "aureooms-js-functools" ;
 
-var check = function ( sortname, arraysort, ctor, n, comparename, compare ) {
+import * as sort from '../../src' ;
 
-	var title;
+function check ( sortname, arraysort, ctor, n, comparename, compare ) {
 
 	arraysort = sort.whole( arraysort );
 
-	title = util.format("whole %s (new %s(%d), %s)", sortname, ctor.name, n, comparename);
+	const title = `whole ${sortname} (new ${ctor.name}(${n}), ${comparename})`;
 
-	console.log( title );
-
-	test( title, function () {
-
-		var a;
+	test( title, t => {
 
 		// SETUP ARRAY
-		a = new ctor(n);
+		const a = new ctor(n);
 		array.iota( a, 0, n, 0 );
 
 		// SORT ARRAY
 		random.shuffle( a, 0, n );
 		arraysort( compare, a );
 
-		deepEqual( sort.issorted( compare , a , 0 , n ) , n , "check sorted" );
-		deepEqual( a.length, n, "check length a" );
+		t.is( sort.issorted( compare , a , 0 , n ) , n , "check sorted" );
+		t.is( a.length, n, "check length a" );
+
 	} );
-};
+}
+
 itertools.exhaust( itertools.map(
 
 function ( args ) {

@@ -1,13 +1,12 @@
 
 
-var selectionsort = function ( compare, a, i, j ) {
-
-	var o, t, k;
+export function selectionsort ( compare, a, i, j ) {
 
 	for ( ; i < j ; ++i ) {
 
-		t = k = i;
-		o = a[t];
+		let k = i;
+		let t = i;
+		let o = a[t];
 
 		while ( ++t < j ) {
 
@@ -24,6 +23,4 @@ var selectionsort = function ( compare, a, i, j ) {
 		}
 
 	}
-};
-
-exports.selectionsort = selectionsort;
+}

@@ -1,7 +1,7 @@
 
-var _fordjohnson = function ( binarysearch ) {
+export function _fordjohnson ( binarysearch ) {
 
-	var fordjohnson = function ( compare , swap , a , i , j ) {
+	const fordjohnson = function ( compare , swap , a , i , j ) {
 
 		var m , k , t , y , p , q , r , x , l , w , s , pairswap ;
 
@@ -90,6 +90,4 @@ var _fordjohnson = function ( binarysearch ) {
 
 	return fordjohnson ;
 
-} ;
-
-exports._fordjohnson = _fordjohnson ;
+}

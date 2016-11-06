@@ -1,6 +1,6 @@
 
 
-var whole = function ( sort ) {
+export function whole ( sort ) {
 
 	return function ( compare, array ) {
 
@@ -8,6 +8,4 @@ var whole = function ( sort ) {
 
 	};
 
-};
-
-exports.whole = whole;
+}

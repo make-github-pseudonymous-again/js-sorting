@@ -4,7 +4,7 @@
  * such that [left,k[ is sorted.
  */
 
-var issorted = function ( compare , array , left , right ) {
+export function issorted ( compare , array , left , right ) {
 
 	if ( left >= right ) return right ;
 
@@ -20,6 +20,4 @@ var issorted = function ( compare , array , left , right ) {
 
 	return left ;
 
-} ;
-
-exports.issorted = issorted ;
+}

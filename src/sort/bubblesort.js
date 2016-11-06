@@ -1,11 +1,8 @@
+export function bubblesort ( compare, a, i, j ) {
 
+	const s = j - 1;
 
-
-var bubblesort = function ( compare, a, i, j ) {
-
-	var swapped, k, s, t;
-
-	s = j - 1;
+	let swapped ;
 
 	do {
 
@@ -15,13 +12,13 @@ var bubblesort = function ( compare, a, i, j ) {
 
 		swapped = false;
 
-		for ( k = i ; k < s ; ++k ) {
+		for ( let k = i ; k < s ; ++k ) {
 
 			if ( compare( a[k], a[k + 1] ) > 0 ) {
 
 				// swap boxes
 
-				t = a[k];
+				const t = a[k];
 				a[k] = a[k + 1];
 				a[k + 1] = t;
 
@@ -32,6 +29,4 @@ var bubblesort = function ( compare, a, i, j ) {
 		}
 
 	} while ( swapped );
-};
-
-exports.bubblesort = bubblesort;
+}
