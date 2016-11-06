@@ -1,0 +1,64 @@
+{
+  "name": "aureooms-js-sort",
+  "description": "sorting code bricks for JavaScript",
+  "version": "6.0.0",
+  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "ava": {
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-sort/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "aureooms-js-array": "^3.1.0",
+    "aureooms-js-compare": "^1.4.5",
+    "aureooms-js-functools": "^2.0.3",
+    "aureooms-js-in-situ-sort-spec": "^7.0.0",
+    "aureooms-js-itertools": "^3.0.0",
+    "aureooms-js-random": "^1.0.2",
+    "aureooms-js-search": "^0.0.4",
+    "ava": "^0.16.0",
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "codeclimate-test-reporter": "^0.4.0",
+    "coveralls": "^2.11.14",
+    "esdoc": "^0.4.8",
+    "nyc": "^8.4.0"
+  },
+  "homepage": "http://aureooms.github.io/js-sort/",
+  "keywords": [
+    "bricks",
+    "javascript",
+    "js",
+    "order",
+    "sort",
+    "sorting"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "url": "https://github.com/aureooms/js-sort.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "prepublish": "npm run build",
+    "test": "ava ./test/src"
+  }
+}
