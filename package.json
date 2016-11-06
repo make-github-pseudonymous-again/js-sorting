@@ -1,7 +1,7 @@
 {
   "name": "aureooms-js-sort",
   "description": "sorting code bricks for JavaScript",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "require": [
