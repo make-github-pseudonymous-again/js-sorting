@@ -1,10 +1,11 @@
-[js-sort](http://aureooms.github.io/js-sort)
+[@aureooms/js-sort](https://aureooms.github.io/js-sort)
 ==
 
 <img src="http://www.explainxkcd.com//wiki/images/b/bc/ineffective_sorts.png" width="864">
 
-Sorting algorithms for JavaScript. Parent is
-[aureooms/js-algo](https://github.com/aureooms/js-algo).
+Sorting algorithms for JavaScript.
+See [docs](https://aureooms.github.io/js-sort).
+Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 
 ```js
 let fordjohnson = sort._fordjohnson( search.binarysearch ) ;
