@@ -1,11 +1,11 @@
 import test from 'ava' ;
 
-import array from "aureooms-js-array" ;
-import search from "aureooms-js-search" ;
-import random from "aureooms-js-random" ;
-import compare from "aureooms-js-compare" ;
-import * as itertools from "aureooms-js-itertools" ;
-import functools from "aureooms-js-functools" ;
+import array from "@aureooms/js-array" ;
+import search from "@aureooms/js-search" ;
+import random from "@aureooms/js-random" ;
+import compare from "@aureooms/js-compare" ;
+import * as itertools from "@aureooms/js-itertools" ;
+import functools from "@aureooms/js-functools" ;
 
 import * as sort from '../../src' ;
 
