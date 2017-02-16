@@ -1,7 +1,7 @@
 ```js
-import array from "aureooms-js-array" ;
-import search from "aureooms-js-search" ;
-import compare from "aureooms-js-compare" ;
+import array from "@aureooms/js-array" ;
+import search from "@aureooms/js-search" ;
+import compare from "@aureooms/js-compare" ;
 
 let fordjohnson = function ( compare , a , i , j ) {
 

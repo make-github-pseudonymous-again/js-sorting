@@ -4,10 +4,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:aureooms-js-sort
+jspm install npm:@aureooms/js-sort
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-sort --save
+npm install @aureooms/js-sort --save
 ```
