@@ -1,8 +1,8 @@
 import test from 'ava' ;
 
-import array from "@aureooms/js-array" ;
+import { iota , swap } from "@aureooms/js-array" ;
 import search from "@aureooms/js-search" ;
-import random from "@aureooms/js-random" ;
+import { shuffle } from "@aureooms/js-random" ;
 import compare from "@aureooms/js-compare" ;
 import * as itertools from "@aureooms/js-itertools" ;
 import functools from "@aureooms/js-functools" ;
@@ -19,10 +19,10 @@ function check ( sortname, arraysort, ctor, n, comparename, compare ) {
 
 		// SETUP ARRAY
 		const a = new ctor(n);
-		array.iota( a, 0, n, 0 );
+		iota( a, 0, n, 0 );
 
 		// SORT ARRAY
-		random.shuffle( a, 0, n );
+		shuffle( a, 0, n );
 		arraysort( compare, a );
 
 		t.is( sort.issorted( compare , a , 0 , n ) , n , "check sorted" );
@@ -55,7 +55,7 @@ itertools.product( [
 	[ "bubblesort", sort.bubblesort ],
 	[ "fordjohnson" , function ( compare , a , i , j ) {
 
-		sort._fordjohnson( search.binarysearch )( compare , array.swap , a , i , j ) ;
+		sort._fordjohnson( search.binarysearch )( compare , swap , a , i , j ) ;
 
 	} ]
 
