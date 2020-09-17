@@ -1,4 +1,4 @@
-[@aureooms/js-sort](https://aureooms.github.io/js-sort)
+:signal_strength: [@aureooms/js-sort](https://aureooms.github.io/js-sort)
 ==
 
 <img src="http://www.explainxkcd.com//wiki/images/b/bc/ineffective_sorts.png" width="864">
@@ -6,6 +6,9 @@
 Sorting algorithms for JavaScript.
 See [docs](https://aureooms.github.io/js-sort).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
+
+> :building_construction: Caveat emptor! This is work in progress. Code may be
+> working. Documentation may be present. Coherence may be. Maybe.
 
 ```js
 let fordjohnson = sort._fordjohnson( search.binarysearch ) ;
@@ -31,12 +34,13 @@ This package has several children:
   - [aureooms/js-in-situ-sort-spec](https://github.com/aureooms/js-in-situ-sort-spec): in place sorting for JavaScript
     - [aureooms/js-heapsort](https://github.com/aureooms/js-heapsort): heapsort for JavaScript
     - [aureooms/js-quicksort](https://github.com/aureooms/js-quicksort): quicksort for JavaScript
+    - [aureooms/js-insertion-sort](https://github.com/aureooms/js-insertion-sort): Insertion sorting algorithms for JavaScript
   - [aureooms/js-mergesort](https://github.com/aureooms/js-mergesort): mergesort for JavaScript
+  - [aureooms/js-odd-even-mergesort](https://github.com/aureooms/js-odd-even-mergesort): Batcher's odd-even mergesort for JavaScript
+  - [aureooms/js-radix-sort](https://github.com/aureooms/js-radix-sort): Radix sorting algorithms for JavaScript
   - [aureooms/js-merging](https://github.com/aureooms/js-merging): merging for JavaScript
   - [aureooms/js-partition](https://github.com/aureooms/js-partition): partition for JavaScript
-  - [aureooms/js-radixsort](https://github.com/aureooms/js-radixsort): radixsort for JavaScript
   - [aureooms/js-selection](https://github.com/aureooms/js-selection): selection for JavaScript
-  - [aureooms/js-odd-even-mergesort](https://github.com/aureooms/js-odd-even-mergesort): Batcher's odd-even mergesort for JavaScript
 
 
 ## Reference
