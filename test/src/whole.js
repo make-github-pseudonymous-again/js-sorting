@@ -3,7 +3,7 @@ import test from 'ava' ;
 import { iota , swap } from "@aureooms/js-array" ;
 import search from "@aureooms/js-search" ;
 import { shuffle } from "@aureooms/js-random" ;
-import compare from "@aureooms/js-compare" ;
+import * as compare from "@aureooms/js-compare" ;
 import * as itertools from "@aureooms/js-itertools" ;
 import functools from "@aureooms/js-functools" ;
 
