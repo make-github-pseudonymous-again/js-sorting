@@ -22,8 +22,6 @@ a ; // [ 6 , 5 , 4 , 3 , 2 , 1 ]
 
 // but also
 
-/** insertionsort */
-let insertionsort = sort.insertionsort ;
 /** selectionsort */
 let selectionsort = sort.selectionsort ;
 /** bubblesort */

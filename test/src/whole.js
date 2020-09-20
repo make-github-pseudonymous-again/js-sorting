@@ -50,7 +50,6 @@ function ( args ) {
 itertools.product( [
 
 [
-	[ "insertionsort", sort.insertionsort ],
 	[ "selectionsort", sort.selectionsort ],
 	[ "bubblesort", sort.bubblesort ],
 	[ "fordjohnson" , function ( compare , a , i , j ) {
