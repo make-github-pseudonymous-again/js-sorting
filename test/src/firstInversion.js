@@ -2,16 +2,16 @@ import test from 'ava' ;
 
 import { increasing , decreasing } from "@aureooms/js-compare" ;
 
-import { issorted } from '../../src' ;
+import { firstInversion } from '../../src' ;
 
 function macro ( t , array , left , right , k1 , k2 ) {
 
 	const n = array.length ;
 
-	t.is( issorted( increasing , array , left , right ) , k1 ) ;
-	t.is( issorted( decreasing , array , left , right ) , k2 ) ;
+	t.is( k1, firstInversion( increasing , array , left , right ) ) ;
+	t.is( k2, firstInversion( decreasing , array , left , right ) ) ;
 
-	t.is( array.length , n ) ;
+	t.is( n, array.length ) ;
 
 }
 

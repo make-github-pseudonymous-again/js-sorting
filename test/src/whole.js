@@ -25,8 +25,8 @@ function check ( sortname, arraysort, ctor, n, comparename, compare ) {
 		shuffle( a, 0, n );
 		arraysort( compare, a );
 
-		t.is( sort.issorted( compare , a , 0 , n ) , n , "check sorted" );
-		t.is( a.length, n, "check length a" );
+		t.true( sort.isSorted( compare , a , 0 , n ) , "check sorted" );
+		t.is( n, a.length, "check length a" );
 
 	} );
 }

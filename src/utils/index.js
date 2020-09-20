@@ -1,2 +1,3 @@
-export * from './issorted' ;
+export * from './firstInversion' ;
+export * from './isSorted' ;
 export * from './whole' ;
