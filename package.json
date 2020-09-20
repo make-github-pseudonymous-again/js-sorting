@@ -7,7 +7,11 @@
     "require": [
       "regenerator-runtime/runtime",
       "@babel/register"
-    ]
+    ],
+    "files": [
+      "test/src/**/*"
+    ],
+    "timeout": "1m"
   },
   "babel": {
     "presets": [
@@ -80,7 +84,7 @@
     "@aureooms/js-itertools": "^3.1.1",
     "@aureooms/js-random": "^2.0.0",
     "@aureooms/js-search": "^0.0.4",
-    "ava": "^0.19.1",
+    "ava": "^3.12.1",
     "babel-cli": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
@@ -121,7 +125,8 @@
     "build": "babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
     "prepublish": "npm run build",
-    "test": "ava ./test/src",
-    "esdoc": "esdoc"
+    "test": "ava",
+    "esdoc": "esdoc",
+    "lint": "true"
   }
 }
