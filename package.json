@@ -38,7 +38,20 @@
     "codeclimate-test-reporter": "^0.4.1",
     "coveralls": "^2.11.16",
     "esdoc": "^0.5.2",
-    "nyc": "^11.0.1"
+    "nyc": "^11.0.1",
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
+    "@babel/register": "7.11.5",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.0.1",
+    "babel-preset-power-assert": "3.0.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "np": "6.5.0",
+    "power-assert": "1.6.1",
+    "regenerator-runtime": "0.13.7"
   },
   "homepage": "http://aureooms.github.io/js-sort/",
   "keywords": [
