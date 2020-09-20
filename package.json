@@ -5,8 +5,8 @@
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "require": [
-      "babel-polyfill",
-      "babel-register"
+      "@babel/polyfill",
+      "@babel/register"
     ]
   },
   "babel": {
