@@ -11,7 +11,10 @@ Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 > working. Documentation may be present. Coherence may be. Maybe.
 
 ```js
-let fordjohnson = sort._fordjohnson( search.binarysearch ) ;
+import {isSorted} from '@aureooms/js-sort';
+import {increasing, decreasing} from '@aureooms/js-compare';
+isSorted(increasing, [1, 2, 3], 0, 3); // true
+isSorted(decreasing, [1, 2, 3], 0, 3); // false
 ```
 
 [![License](https://img.shields.io/github/license/aureooms/js-sort.svg)](https://raw.githubusercontent.com/aureooms/js-sort/master/LICENSE)
@@ -39,6 +42,7 @@ This package has several children:
     - [aureooms/js-heapsort](https://github.com/aureooms/js-heapsort): heapsort for JavaScript
     - [aureooms/js-quicksort](https://github.com/aureooms/js-quicksort): quicksort for JavaScript
     - [aureooms/js-insertion-sort](https://github.com/aureooms/js-insertion-sort): Insertion sorting algorithms for JavaScript
+    - [aureooms/js-merge-insertion-sort](https://github.com/aureooms/js-merge-insertion-sort): Ford-Johnson algorithm for JavaScript
   - [aureooms/js-mergesort](https://github.com/aureooms/js-mergesort): mergesort for JavaScript
   - [aureooms/js-odd-even-mergesort](https://github.com/aureooms/js-odd-even-mergesort): Batcher's odd-even mergesort for JavaScript
   - [aureooms/js-radix-sort](https://github.com/aureooms/js-radix-sort): Radix sorting algorithms for JavaScript

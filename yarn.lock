@@ -54,11 +54,6 @@
   resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-2.0.0.tgz#f62c6954ed79bd9a520197125ee3cfbe14b00d72"
   integrity sha1-9ixpVO15vZpSAZcSXuPPvhSwDXI=
 
-"@aureooms/js-search@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-search/-/js-search-0.0.4.tgz#e7082a7de169c80710924f5292b631a2c1bb9a41"
-  integrity sha1-5wgqfeFpyAcQkk9SkrYxosG7mkE=
-
 "@aureooms/js-sort@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-sort/-/js-sort-7.0.0.tgz#db3c8b93acd93ee0500462b2cec29239c3deb34d"

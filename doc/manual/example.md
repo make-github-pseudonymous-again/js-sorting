@@ -1,29 +1,23 @@
 # Examples
 ```js
-import array from "@aureooms/js-array" ;
-import search from "@aureooms/js-search" ;
-import compare from "@aureooms/js-compare" ;
-
-let fordjohnson = function ( compare , a , i , j ) {
-
-	sort._fordjohnson( search.binarysearch )( compare , array.swap , a , i , j ) ;
-
-} ;
+import * as sort from "@aureooms/js-sort" ;
+import {increasing, decreasing} from "@aureooms/js-compare" ;
 
 let a = [ 1 , 6 , 5 , 3 , 2 , 4 ] ;
+let {selectionsort, isSorted} = sort;
 
-fordjohnson( compare.increasing , a , 0 , a.length ) ;
+selectionsort( increasing , a , 0 , a.length ) ;
 
 a ; // [ 1 , 2 , 3 , 4 , 5 , 6 ]
+isSorted(increasing, a, 0, a.length); // true
 
-fordjohnson( compare.decreasing , a , 0 , a.length ) ;
+selectionsort( decreasing , a , 0 , a.length ) ;
 
 a ; // [ 6 , 5 , 4 , 3 , 2 , 1 ]
+isSorted(decreasing, a, 0, a.length); // true
 
 // but also
 
-/** selectionsort */
-let selectionsort = sort.selectionsort ;
 /** bubblesort */
-let bubblesort = sort.bubblesort ;
+let {bubblesort} = sort ;
 ```

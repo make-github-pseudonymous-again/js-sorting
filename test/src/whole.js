@@ -1,7 +1,6 @@
 import test from 'ava' ;
 
 import { iota , swap } from "@aureooms/js-array" ;
-import search from "@aureooms/js-search" ;
 import { shuffle } from "@aureooms/js-random" ;
 import * as compare from "@aureooms/js-compare" ;
 import * as itertools from "@aureooms/js-itertools" ;
@@ -51,13 +50,7 @@ itertools.product( [
 
 [
 	[ "selectionsort", sort.selectionsort ],
-	[ "bubblesort", sort.bubblesort ],
-	[ "fordjohnson" , function ( compare , a , i , j ) {
-
-		sort._fordjohnson( search.binarysearch )( compare , swap , a , i , j ) ;
-
-	} ]
-
+	[ "bubblesort", sort.bubblesort ]
 ],
 
 [
