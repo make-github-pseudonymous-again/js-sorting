@@ -3,7 +3,7 @@
 
 <p align="center">
 <a href="https://xkcd.com/1185">
-<img src="https://imgs.xkcd.com/comics/ineffective_sorts.png " width="600">
+<img src="https://imgs.xkcd.com/comics/ineffective_sorts.png" width="600">
 </a><br/>
 © <a href="https://xkcd.com">xkcd.com</a>
 </p>
