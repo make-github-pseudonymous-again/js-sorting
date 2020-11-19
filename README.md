@@ -37,7 +37,7 @@ isSorted(decreasing, [1, 2, 3], 0, 3); // false
 [![Documentation](https://aureooms.github.io/js-sort//badge.svg)](https://aureooms.github.io/js-sort//source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sort)](https://bundlephobia.com/result?p=@aureooms/js-sort)
 
-## Children
+## :baby: Children
 
 This package has several children:
 
@@ -56,6 +56,6 @@ This package has several children:
   - [aureooms/js-selection](https://github.com/aureooms/js-selection): selection for JavaScript
 
 
-## Reference
+## :link: Links
 
   - http://sorting.at
