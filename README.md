@@ -1,7 +1,12 @@
 :signal_strength: [@aureooms/js-sort](https://aureooms.github.io/js-sort)
 ==
 
-<img src="http://www.explainxkcd.com//wiki/images/b/bc/ineffective_sorts.png" width="864">
+<p align="center">
+<a href="https://xkcd.com/1185">
+<img src="https://imgs.xkcd.com/comics/ineffective_sorts.png " width="600">
+</a><br/>
+© <a href="https://xkcd.com">xkcd.com</a>
+</p>
 
 Sorting algorithms for JavaScript.
 See [docs](https://aureooms.github.io/js-sort).
