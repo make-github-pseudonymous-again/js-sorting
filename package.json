@@ -73,7 +73,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-sort/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-sort/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -116,7 +116,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/aureooms/js-sort.git",
+    "url": "https://github.com/make-github-pseudonymous-again/js-sort.git",
     "type": "git"
   },
   "scripts": {
