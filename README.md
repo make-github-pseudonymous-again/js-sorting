@@ -1,4 +1,4 @@
-:signal_strength: [@aureooms/js-sort](https://aureooms.github.io/js-sort)
+:signal_strength: [@aureooms/js-sort](https://make-github-pseudonymous-again.github.io/js-sort)
 ==
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 Sorting algorithms for JavaScript.
-See [docs](https://aureooms.github.io/js-sort).
+See [docs](https://make-github-pseudonymous-again.github.io/js-sort).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 
 > :building_construction: Caveat emptor! This is work in progress. Code may be
@@ -34,7 +34,7 @@ isSorted(decreasing, [1, 2, 3], 0, 3); // false
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-sort.svg)](https://codeclimate.com/github/aureooms/js-sort/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-sort/master.svg)](https://codecov.io/gh/aureooms/js-sort)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-sort.svg)](https://codeclimate.com/github/aureooms/js-sort/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-sort//badge.svg)](https://aureooms.github.io/js-sort//source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-sort//badge.svg)](https://make-github-pseudonymous-again.github.io/js-sort//source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sort)](https://bundlephobia.com/result?p=@aureooms/js-sort)
 
 ## :baby: Children
