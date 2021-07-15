@@ -16,8 +16,8 @@ Parent is [@aureooms/js-algorithms](https://github.com/make-github-pseudonymous-
 > working. Documentation may be present. Coherence may be. Maybe.
 
 ```js
-import {isSorted} from '@aureooms/js-sort';
-import {increasing, decreasing} from '@aureooms/js-compare';
+import {isSorted} from '@comparison-sorting/is-sorted';
+import {increasing, decreasing} from '@total-order/primitive';
 isSorted(increasing, [1, 2, 3], 0, 3); // true
 isSorted(decreasing, [1, 2, 3], 0, 3); // false
 ```

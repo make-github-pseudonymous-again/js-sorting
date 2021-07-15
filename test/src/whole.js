@@ -1,10 +1,15 @@
 import test from 'ava' ;
 
-import { iota , swap } from "@aureooms/js-array" ;
-import { shuffle } from "@aureooms/js-random" ;
-import * as compare from "@aureooms/js-compare" ;
-import * as itertools from "@aureooms/js-itertools" ;
+import { shuffle } from "@randomized/random" ;
+import {increasing, decreasing} from "@total-order/primitive" ;
+import {exhaust} from '@iterable-iterator/consume';
+import {map} from '@iterable-iterator/map';
+import {range} from '@iterable-iterator/range';
+import {list} from '@iterable-iterator/list';
+import {_chain as chain} from '@iterable-iterator/chain';
+import {product} from '@set-theory/cartesian-product';
 import functools from "@aureooms/js-functools" ;
+import {isSorted} from '@comparison-sorting/is-sorted';
 
 import * as sort from '../../src' ;
 
@@ -17,20 +22,19 @@ function check ( sortname, arraysort, ctor, n, comparename, compare ) {
 	test( title, t => {
 
 		// SETUP ARRAY
-		const a = new ctor(n);
-		iota( a, 0, n, 0 );
+		const a = ctor.from(range(n));
 
 		// SORT ARRAY
 		shuffle( a, 0, n );
 		arraysort( compare, a );
 
-		t.true( sort.isSorted( compare , a , 0 , n ) , "check sorted" );
+		t.true( isSorted( compare , a , 0 , n ) , "check sorted" );
 		t.is( n, a.length, "check length a" );
 
 	} );
 }
 
-itertools.exhaust( itertools.map(
+exhaust( map(
 
 function ( args ) {
 
@@ -42,11 +46,11 @@ function ( args ) {
 
 		check( sortname, arraysort, type, size, comparename, compare );
 
-	}, itertools.list( itertools.chain( args ) ) );
+	}, list( chain( args ) ) );
 
 } ,
 
-itertools.product( [
+product( [
 
 [
 	[ "selectionsort", sort.selectionsort ],
@@ -54,8 +58,8 @@ itertools.product( [
 ],
 
 [
-	[ "increasing", compare.increasing ],
-	[ "decreasing", compare.decreasing ]
+	[ "increasing", increasing ],
+	[ "decreasing", decreasing ]
 ],
 
 [[0], [1], [2], [10], [63], [64], [65]],

@@ -1,10 +1,10 @@
 # Examples
 ```js
-import * as sort from "@aureooms/js-sort" ;
-import {increasing, decreasing} from "@aureooms/js-compare" ;
+import {selectionsort} from '@aureooms/js-sort' ;
+import {increasing, decreasing} from '@total-order/primitive';
+import {isSorted} from '@comparison-sorting/is-sorted';
 
 let a = [ 1 , 6 , 5 , 3 , 2 , 4 ] ;
-let {selectionsort, isSorted} = sort;
 
 selectionsort( increasing , a , 0 , a.length ) ;
 
@@ -19,5 +19,5 @@ isSorted(decreasing, a, 0, a.length); // true
 // but also
 
 /** bubblesort */
-let {bubblesort} = sort ;
+import {bubblesort} from '@aureooms/js-sort' ;
 ```
