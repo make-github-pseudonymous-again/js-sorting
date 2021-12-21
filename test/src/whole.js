@@ -8,7 +8,7 @@ import {range} from '@iterable-iterator/range';
 import {list} from '@iterable-iterator/list';
 import {_chain as chain} from '@iterable-iterator/chain';
 import {product} from '@set-theory/cartesian-product';
-import functools from "@aureooms/js-functools" ;
+import {star} from "@functional-abstraction/functools";
 import {isSorted} from '@comparison-sorting/is-sorted';
 
 import * as sort from '../../src' ;
@@ -38,7 +38,7 @@ exhaust( map(
 
 function ( args ) {
 
-	functools.star( function ( sortname, arraysort, comparename, compare, size, type ) {
+	star( function ( sortname, arraysort, comparename, compare, size, type ) {
 
 		if ( type.BYTES_PER_ELEMENT && size > Math.pow( 2, type.BYTES_PER_ELEMENT * 8 ) ) {
 			return;

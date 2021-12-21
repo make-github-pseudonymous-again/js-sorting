@@ -1,6 +1,6 @@
 import ava from 'ava' ;
 
-import * as spec from "@aureooms/js-in-situ-sort-spec" ;
+import * as spec from "@comparison-sorting/specification" ;
 import * as sort from "../../src" ;
 
 spec.test( ava , [
