@@ -1,6 +1,6 @@
 :signal_strength:
 [Sorting](https://make-github-pseudonymous-again.github.io/js-sorting)
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-sorting.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-sorting/master/LICENSE)
+[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-sorting.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-sorting/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-sorting.svg)](https://github.com/make-github-pseudonymous-again/js-sorting/issues)
 ==
 
